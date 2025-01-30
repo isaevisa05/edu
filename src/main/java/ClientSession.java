@@ -48,7 +48,8 @@ public class ClientSession implements Runnable {
     @Override
     public boolean equals(Object obj) {
         if(!(obj instanceof ClientSession session)) return false;
-        if(session.toString().equals(toString())) return true;
-        return false;
+        //if(session.toString().equals(toString())) return true;
+        return session.toString().equals(toString()) ? true : false;
+        //return false;
     }
 }
