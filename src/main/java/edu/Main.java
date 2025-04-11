@@ -1,25 +1,19 @@
 package edu;
 
-public class Main implements Runnable {
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Main {
+
     public static void main(String[] args) {
-        while (i < 10) {
-            System.out.println(v);
-            i++;
+        for (int i = 0; ;i++) {
             System.out.println(i);
         }
     }
 
-    @Override
-    public void run() {
-
-    }
-
-    int de = 1;
-
-    int de2() {
-        return 1;
-    }
-
-    static int i = 0;
-    static final int v = i;
 }
