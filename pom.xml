@@ -35,6 +35,11 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.111.Final</version>
         </dependency>
+        <dependency>
+            <groupId>com.googlecode.flyway</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>1.5</version>
+        </dependency>
     </dependencies>
 
 </project>
