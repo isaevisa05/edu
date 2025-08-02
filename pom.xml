@@ -14,6 +14,22 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>11.9.2</version>
+                <configuration>
+                    <url>jdbc:postgresql://localhost/flywaytest?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;connectionCollation=utf8_general_ci&amp;characterSetResults=UTF-8</url>
+                    <user>root</user>
+                    <password>root</password>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
     <dependencies>
         <dependency>
             <groupId>org.lwjgl</groupId>
@@ -36,9 +52,9 @@
             <version>4.1.111.Final</version>
         </dependency>
         <dependency>
-            <groupId>com.googlecode.flyway</groupId>
+            <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
-            <version>1.5</version>
+            <version>11.9.2</version>
         </dependency>
     </dependencies>
 
